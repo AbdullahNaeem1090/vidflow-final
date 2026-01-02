@@ -8,7 +8,7 @@ import { toast } from "sonner";
 export default function VideoUploadPage() {
 
   useEffect(()=>{
-   toast.info("Its free tear from Supabase. Upload Short Videos 😊")
+   toast.info("Upload Simulation only.")
   },[])
 
   return (
