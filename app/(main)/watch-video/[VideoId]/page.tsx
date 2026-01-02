@@ -1,5 +1,6 @@
 "use client";
 import { Separator } from "@/components/ui/separator";
+import { formatTimeAgo } from "@/lib/helper";
 import Loader from "@/page-components/Loader";
 import { AddToPlaylistDialog } from "@/page-components/Playlists/playlist-manager";
 import { Comments } from "@/page-components/VideoPlay/comments";
@@ -79,7 +80,7 @@ export default function WatchPage() {
                 views
               </span>
               <span aria-hidden="true">•</span>
-              <span>{CurrentVideo?.uploadedAt ?? ""}</span>
+              <span>{formatTimeAgo(CurrentVideo?.uploadedAt) ?? ""}</span>
             </div>
 
             <VideoMeta
